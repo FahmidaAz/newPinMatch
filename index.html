@@ -82,9 +82,7 @@
                document.getElementById('right').style.display = 'block';
            }else{
             document.getElementById('wrong').style.display = 'block';
-            document.getElementById('clear').addEventListener('click',function(){
-               
-               var chance = document.getElementById('chance').innerText;
+            var chance = document.getElementById('chance').innerText;
                var num = parseInt(chance);
                if(num>0){
                var leftChance = num - 1;
@@ -94,7 +92,10 @@
                    alert("Your account has locked!!");
                   
                }
-            })
+            // document.getElementById('clear').addEventListener('click',function(){
+               
+             
+            // })
               
               
            }
